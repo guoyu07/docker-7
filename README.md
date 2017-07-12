@@ -1,4 +1,4 @@
-# Development Enviriment based on Docker
+# Development Environment based on Docker
 >单一进程的进程服务
 
 >前段时间，鸟哥也在说提高开发效率的事情，再加上自己因为新项目开发的原因，把环境搭建的版本在php7的基础上做了相关扩展的升级。开放出来给别的同学也省省时间。
