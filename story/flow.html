@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>flow</title>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.0/raphael-min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="http://flowchart.js.org/flowchart-latest.js"></script>
+</head>
+<body>
+<div id="diagram"></div>
+
+<script>
+  var diagram = flowchart.parse("""st=>start: Start
+op=>operation: Your Operation
+cond=>condition: Yes or No?
+e=>end
+st->op->cond
+cond(yes)->e
+cond(no)->op""");
+  diagram.drawSVG('diagram');
+</script>
+</body>
+</html>

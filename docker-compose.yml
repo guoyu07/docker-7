@@ -30,3 +30,12 @@ redis:
     build: ./redis
     ports:
       - "6379:6379"
+paddle:
+    image: "paddlepaddle/book"
+    ports:
+      - "8888:8888"
+    links:
+      - "php"
+    volumes:
+      - /Users/zongbao/dev:/opt
+#docker run -d -p 8888:8888 paddlepaddle/book
